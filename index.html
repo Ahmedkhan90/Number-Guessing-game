@@ -13,7 +13,8 @@
     <form onsubmit="return  FirstAddNumber()">
         <h1> Guess Any Number Your Result Will Be 19998 </h1>
         <h3> You Try First : Enter Any Four Numbers Like 1234</h3>
-        <input type="text" name="number" id="UserInput" maxlength="4" onkeyup="this.value=this.value.replace(/[^\d]/,'')">
+        <input type="text" name="number" id="UserInput" maxlength="4"
+            onkeyup="this.value=this.value.replace(/[^\d]/,'')">
         <button> First Turn Result</button>
         <h3> Computer Turn Think</h3>
         <label id="ComputerResult"></label>
@@ -38,7 +39,7 @@
         <span id="result" ></span> -->
     </form>
 
-    
+
 </body>
 <script>
     let user1;
@@ -66,21 +67,29 @@
         document.getElementById("SComputerResult").innerHTML = res2;
         sum();
         return false;
-       
+
     }
     function sum() {
         sums = parseInt(user1 + res1 + user2 + res2);
-        document.getElementById("Result").innerHTML = " I Told You That I know The Result, Match It From Top, Here I Found:"+sums; 
-    //   console.log(+user1 `+`  +res1 `+`  +user2 `+`  +res2 `=` +sums)   
-    // document.getElementById("Result1").innerHTML = "Your first Turned :" +user1;
-    // document.getElementById("Result2").innerHTML = "Computer Turned :" +res1;
-    // document.getElementById("Result3").innerHTML = "Tour Secound Turned :" +user2;
-    // document.getElementById("Result4").innerHTML =  "Computer Secound Turned :" +res2; 
-    // document.getElementById("Result").innerHTML = "Total Of All numbers :" +sums;
-}
+        document.getElementById("Result").innerHTML = " I Told You That I know The Result, Match It From Top, Here I Found:"  + user1 + "+" + res1 + "+" + user2 + "+" + res2 + "=" + sums;
+        // alert(user1 + "+");
+        // alert("Plus :" + res1);
+        // alert("Plus :" + user2);
+        // alert("Plus",user1);
+        // alert("Plus :" + res2);
+        // alert("Is Equle To :" + sums);
+
+
+        //   console.log(+user1 `+`  +res1 `+`  +user2 `+`  +res2 `=` +sums)   
+        // document.getElementById("Result1").innerHTML = "Your first Turned :" +user1;
+        // document.getElementById("Result2").innerHTML = "Computer Turned :" +res1;
+        // document.getElementById("Result3").innerHTML = "Tour Secound Turned :" +user2;
+        // document.getElementById("Result4").innerHTML =  "Computer Secound Turned :" +res2; 
+        // document.getElementById("Result").innerHTML = "Total Of All numbers :" +sums;
+    }
 
 
 
 </script>
 
-</html> 
+</html>
